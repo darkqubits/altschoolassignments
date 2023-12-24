@@ -3,19 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Sofia+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Responsive Registration Page</title>
   </head>
   <body>
-    <div>
-      <img src="./Assests/Logo.png" alt="" />
+    <div class="big-container">
+      <img src="./Assests/Logo.png" alt="logo" class="logo" />
       <h1>For Individuals</h1>
-      <p>
+      <p class="sub-text">
         Start benefiting from the wellness experience. For companies looking on
         increasing productivity, and improving organization wellness.
       </p>
       <div class="reg-container" id="reg-container">
         <form>
-          <label for="first-name">First Name</label>
+          <label for="first-name" class="text-heading">First Name</label>
           <input
             type="text"
             id="first-name"
@@ -25,7 +33,7 @@
             autofocus
           />
 
-          <label for="last-name">Last Name</label>
+          <label for="last-name" class="text-heading">Last Name</label>
           <input
             type="text"
             id="last-name"
@@ -34,14 +42,14 @@
             aria-label="Last Name"
           />
 
-          <label for="gender">Gender</label>
+          <label for="gender" class="text-heading">Gender</label>
           <select id="gender" name="gender" required aria-label="Gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
 
-          <label for="dob">Date of Birth</label>
+          <label for="dob" class="text-heading">Date of Birth</label>
           <input
             type="date"
             id="dob"
@@ -50,7 +58,7 @@
             aria-label="Date of Birth"
           />
 
-          <label for="weight">Weight (KG)</label>
+          <label for="weight" class="text-heading">Weight (KG)</label>
           <input
             type="number"
             id="weight"
@@ -58,7 +66,7 @@
             required
             aria-label="Weight"
           />
-          <label for="height">Height (CM)</label>
+          <label for="height" class="text-heading">Height (CM)</label>
           <input
             type="number"
             id="height"
@@ -67,7 +75,7 @@
             aria-label="height"
           />
 
-          <label for="education">Activity Level</label>
+          <label for="education" class="text-heading">Activity Level</label>
           <select
             id="activity-level"
             name="activity"
@@ -78,7 +86,7 @@
             <option value="jjc">Amateur</option>
           </select>
 
-          <label for="password">Password</label>
+          <label for="password" class="text-heading">Password</label>
           <input
             type="password"
             id="password"
