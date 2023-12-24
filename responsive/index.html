@@ -3,104 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Sofia+Sans:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Responsive Registration Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive Sign Up Page</title>
   </head>
+
   <body>
-    <div class="big-container">
-      <img src="./Assests/Logo.png" alt="logo" class="logo" />
-      <h1>For Individuals</h1>
-      <p class="sub-text">
-        Start benefiting from the wellness experience. For companies looking on
-        increasing productivity, and improving organization wellness.
-      </p>
-      <div class="reg-container" id="reg-container">
-        <form>
-          <label for="first-name" class="text-heading">First Name</label>
-          <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            required
-            aria-label="First Name"
-            autofocus
-          />
+    <div class="container">
+      <div class="left-section">
+        <img src="./Assests/Logo.png" alt="Illustration" />
+        <h2 class="left-section-header">For Individuals</h2>
+        <p class="left-section-description">
+          Start benefiting from the wellness experience. For <br />
+          companies looking on increasing productivity, and improving<br />
+          organization wellness.
+        </p>
+      </div>
+      <div class="right-section">
+        <form action="#" method="post">
+          <div class="input-container">
+            <div class="input-box" style="flex: 1">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="input-box" style="flex: 1">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
 
-          <label for="last-name" class="text-heading">Last Name</label>
-          <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            required
-            aria-label="Last Name"
-          />
+          <div class="input-container">
+            <div class="input-box">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="dob">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                placeholder="Select here"
+                required
+              />
+            </div>
+          </div>
 
-          <label for="gender" class="text-heading">Gender</label>
-          <select id="gender" name="gender" required aria-label="Gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-
-          <label for="dob" class="text-heading">Date of Birth</label>
-          <input
-            type="date"
-            id="dob"
-            name="dob"
-            required
-            aria-label="Date of Birth"
-          />
-
-          <label for="weight" class="text-heading">Weight (KG)</label>
-          <input
-            type="number"
-            id="weight"
-            name="weight"
-            required
-            aria-label="Weight"
-          />
-          <label for="height" class="text-heading">Height (CM)</label>
-          <input
-            type="number"
-            id="height"
-            name="height"
-            required
-            aria-label="height"
-          />
-
-          <label for="education" class="text-heading">Activity Level</label>
-          <select
-            id="activity-level"
-            name="activity"
-            required
-            aria-label="Activity Level Level"
-          >
-            <option value="pro">Professional</option>
-            <option value="jjc">Amateur</option>
-          </select>
-
-          <label for="password" class="text-heading">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            aria-label="password"
-          />
-
-          <button type="submit" name="submit" id="submit-button">
-            Register
-          </button>
-          <p>
+          <div class="input-container">
+            <div class="input-box" style="flex: 1">
+              <label for="weight">Weight (KG)</label>
+              <input
+                type="text"
+                id="weight"
+                name="weight"
+                placeholder="Enter Weight"
+                required
+              />
+            </div>
+            <div class="input-box" style="flex: 1">
+              <label for="height">Height (CM)</label>
+              <input
+                type="text"
+                id="height"
+                name="height"
+                placeholder="Enter height here"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-box" style="flex: 1">
+              <label for="activity">Activity Level</label>
+              <select id="activity" name="activity" required>
+                <option value="">Select here</option>
+                <option value="hight">High</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-box" style="flex: 1">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+          </div>
+          <button type="submit">Register</button>
+          <p class="footer">
             By clicking Register, you agree to our
-            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+            <span class="terms">Terms of Use </span> and our
+            <span class="terms">Privacy Policy</span>
           </p>
         </form>
       </div>
