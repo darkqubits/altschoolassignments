@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <nav aria-label="Registration Form">
+        <ul>
+            <li><a href="./index.html">About Me</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required aria-label="First Name" autofocus>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required aria-label="Last Name">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required aria-label="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth</label> 
+        <input type="date" id="dob" name="dob" required aria-label="Date of Birth">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required aria-label="Email Address">
+
+        <label for="education">Education Level</label>
+        <select id="education" name="education" required aria-label="Education Level">
+            <option value="bsc">BSc</option>
+            <option value="msc">MSc</option>
+            <option value="diploma">Diploma</option>
+            <option value="phd">PhD</option>
+            <option value="high-school">High School / Secondary School</option>
+            <option value="junior">Junior/Middle School</option>
+            <option value="pg">Postgraduate</option>
+        </select>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required aria-label="Country">
+
+        <label for="city">State/City of Residence</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="employment">Employment Status</label>
+        <select id="employment" name="employment" required aria-label="Employment Status">
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="self-employed">Self-employed</option>
+        </select>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required aria-label="Phone Number">
+
+        <label for="school">Choose School</label>
+        <select id="employment" name="employment" required aria-label="Choose School">
+            <option value="creative">School of Creative Economy</option>
+            <option value="business">School of business</option>
+        </select>
+
+        <label for="course">Choose Course of Study</label>
+        <select id="course" name="course" required aria-label="Choose Course of Study">
+            <option value="music">Music Business in Africa</option>
+            <option value="content-creators">Content Mastery for African Creators</option>
+            <option value="sales">High impact selling</option>
+        </select>
+
+        <label for="how-heard">How did you hear about us?</label>
+        <select id="how-heard" name="how-heard" required aria-label="How did you hear about us?">
+            <option value="twitter">Twitter</option>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="youtube">Youtube</option>
+            <option value="friend">Friend</option>
+            <option value="whatsApp">WhatsApp</option>
+            <option value="instagram">Instagram</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="discount-code">Scholarship/Discount Code (optional)</label>
+        <input type="text" id="discount-code" name="discount-code" aria-label="Scholarship/Discount Code (optional)">
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required aria-label="Agree to Terms and Policy">
+            <label for="terms">By clicking continue, I agree to <a href="#terms">Terms of Use</a> and acknowledge that I have read the <a href="#privacy">Privacy Policy</a>.</label>
+        </div>
+
+        <button type="submit" name="submit">Proceed</button>
+    </form>
+
+    <p>Already have an account? <a href="#sign-in">Sign In</a></p>
+</body>
+</html>
