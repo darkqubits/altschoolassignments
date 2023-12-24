@@ -1,21 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Sofia+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "sofia sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+.nav {
+  background-color: cornflowerblue;
+  padding: 15px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: lighter;
+}
+
 #profile-info {
   border: 1px solid;
-  height: 100px;
+  height: auto;
   width: 700px;
+  margin: 10px;
+  display: inline-flex
+}
+
+img {
+
+  height: 200px;
 }
 
 #biography {
   border: 1px solid;
   height: 200px;
   width: 700px;
+  margin: 10px;
 }
 
 #goals {
   border: 1px solid;
   height: 200px;
   width: 700px;
+  margin: 10px;
 }
 
 p {
   padding: 20px;
+  margin: 10px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.titles {
+  font-weight: 800;
+  color: cornflowerblue;
+}
+
+#id-number {
+  font-weight: 900;
 }
