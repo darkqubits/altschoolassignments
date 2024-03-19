@@ -1,0 +1,22 @@
+{
+  "name": "altschoolform",
+  "version": "1.0.0",
+  "description": "mybiosomewhereinthere",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkqubits/newBio.git"
+  },
+  "keywords": [
+    "bio"
+  ],
+  "author": "Abusan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darkqubits/newBio/issues"
+  },
+  "homepage": "https://github.com/darkqubits/newBio#readme"
+}
